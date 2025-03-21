@@ -8,8 +8,8 @@ import { createClient } from '@supabase/supabase-js';
  * - NEXT_PUBLIC_SUPABASE_URL: URL de tu proyecto Supabase
  * - NEXT_PUBLIC_SUPABASE_ANON_KEY: Clave anónima/pública de tu proyecto Supabase
  */
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.local.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.local.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 // Verificar si las variables de entorno están configuradas
 if (!supabaseUrl || !supabaseKey) {
