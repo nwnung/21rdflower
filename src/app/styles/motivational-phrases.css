@@ -1,0 +1,95 @@
+/* Estilos para frases motivacionales y sistema de reacciones */
+
+.phrases-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.motivational-phrase {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.motivational-phrase:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.phrase-text {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Contenedor para el corazón y el contador */
+.heart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+.heart-button:hover:not(:disabled) {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.heart-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.heart-button.has-voted {
+  opacity: 1;
+}
+
+.heart-count {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--foreground);
+  opacity: 0.8;
+}
+
+.heart-button:disabled {
+  cursor: default;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.error {
+  color: #e53935;
+}
+
+/* Estilos para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .motivational-phrase {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heart-count {
+    opacity: 0.9;
+  }
+} 
