@@ -7,6 +7,7 @@ import FlowerAnimation from './components/FlowerAnimation';
 import MotivationalPhrasesList from './components/MotivationalPhrasesList';
 import initializePhrases from './lib/initializePhrases';
 import './styles/motivational-phrases.css';
+import Link from 'next/link';
 
 // Cargamos el componente Confetti de forma dinámica para evitar errores en el servidor
 const Confetti = dynamic(() => import('react-confetti'), {
@@ -105,9 +106,9 @@ export default function Home() {
       </motion.div>
       
       {/* Marca de agua */}
-      <div className="absolute bottom-4 right-4 py-1 px-3 rounded-full bg-black/10 dark:bg-white/20 text-black dark:text-white font-medium text-sm backdrop-blur-sm">
+      <Link href="https://www.instagram.com/jonaa.nw/" className="absolute bottom-5 right-5  text-zinc-700 dark:text-white font-medium text-sm backdrop-blur-sm">
         jonaa.nw
-      </div>
+      </Link>
     </main>
   );
 }
