@@ -1,0 +1,37 @@
+# OVERVIEW
+
+Te encuentras en la raiz del proyecto.
+
+crearemos una app one page para que el dia de mañana personas que no recibieron flores amarillas puedan recibir una sorpresa motivacional.
+
+la pagina llevara lo siguiente:
+
+una animacion de una flor amarilla pixelada al estilo de los pixeles de los videojuegos de los 80/90.
+
+un texto motivacional que por cada vez que se carga la pagina, cambie de texto.
+
+aqui algunos fijos.
+
+"Las flores amarillas más bonitas son las que florecen en tu interior"
+"No necesitas flores amarillas para brillar con luz propia"
+"Quizás no recibiste flores amarillas, pero mereces un jardín entero"
+"Las flores se marchitan, pero tu sonrisa ilumina más que mil girasoles"
+
+
+# TECHNICAL REQUIREMENTS
+
+- la pagina debe ser responsive.
+- la pagina debe ser optimizada para mobile.
+- la pagina debe tener un buen performance.
+- la pagina debe ser accesible.
+- manten el codigo lo mas limpio posible.
+- utiliza comentarios para explicar el codigo.
+
+
+# ADDITIONAL NOTES
+
+- NO SAQUES CONCLUCIONES ANTES DE TIEMPO!! SOLO RESPONDE A LO QUE TE PIDO.
+- SOLO RESPONDE LO QUE TE PIDO, NO AÑADAS NADA MAS.
+- RECUERDA EXPLICARME LO QUE HACES DE LA MANERA LAS SENCILLA Y CLARA.
+- USA COMENTARIOS PARA EXPLICAR EL CODIGO.
+- RECUERDA MANTENER UN ESTILO MINIMALISTA.

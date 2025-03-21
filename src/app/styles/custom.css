@@ -1,0 +1,76 @@
+/* Estilos personalizados para la aplicación de flores amarillas */
+
+/* Gradientes suaves */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--yellow-tertiary) 0%, var(--background) 100%);
+}
+
+/* Sombras y efectos */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2), 0 0 30px rgba(255, 215, 0, 0.1);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-shadow {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.2);
+  }
+}
+
+/* Animaciones */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Botones y elementos interactivos */
+.btn-yellow {
+  background: var(--yellow-primary);
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yellow:hover {
+  background: var(--yellow-secondary);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-yellow:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejoras para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .floating, 
+  .btn-yellow:hover,
+  .btn-yellow:active {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+} 
